@@ -15,20 +15,25 @@
 <body>
 <section id="wrapper">
 	
-	<section id="main">
+	<section id="main" >
                      
-                     <div><form method="POST" action="">
-	<div><div style="">Nombre</div><input type="text" name="nombre" placeholder="Ingrese su nombre"></div>
-	<div><div>Asunto</div><input type="text" name="asunto" placeholder="Ingrese Asunto"></div>	
-	<div><div>Email</div><input name="email" type="email" placeholder="Ingrese su email"></div>
+                     <div><form method="POST" action="https://pruebasanalisis.000webhostapp.com/enviar.php">
+	<div><div ><label for="nombre">Nombre</label></div><input required="true" id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre"></div>
+	<div><div><label for="asunto">Asunto</label></div><input required="true" id="asunto" type="text" name="asunto" placeholder="Ingrese Asunto"></div>	
+	<div><div><label for="correo">Email</label></div><input required="true" name="correo" id="correo" type="email" placeholder="Ingrese email a enviar"></div>
   
-	<div><div>Mensaje</div><textarea cols="40" rows="10" name="mensaje" placeholder="Ingrese mensaje"></textarea></div>
-	<div><input type="submit" value="enviar"></div>
-</form></div>		
+	<div><div><label for="mensaje">Mensaje</label></div><textarea maxlength="70"  required="true" id="mensaje" cols="40" rows="10" name="mensaje" placeholder="Ingrese mensaje"></textarea></div>
+	<div>
+<input  name="prueba" value="t" hidden="true" >
+		<input type="submit" value="enviar"></div>
+</form><h5>Envia correos.</h5></div>		
 	</section>
 
 
 </section>
-
+<footer>
+	<ul><li ><a href="index.html">Inicio</a>
+</li></ul>
+	</footer>
 </body>
 </html>
