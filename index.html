@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Trabajo 1</title>
+
+	<title>Hoja de vida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<style type="text/css">
+	header,footer{
+		background-color: #5d6ab7;
+	}
+	body{
+		background-color: #525d96
+	}
+</style>
 </head>
-<body>
+<body >
 
+<div class="container-fluid">
+	<div class="row justify-content-center">
 
-<header>
-	<img src="https://www.cardiffwebdevelopment.co.uk/assets/frontend/img/web-development-tech-icons.png"  height="200px" >
-<h1 style="color: red">Juan David Sanchez Mancilla</h1>	
+		<header class="row col-12 justify-content-center" >
+	<img class="figure-img img-fluid" src="img.png"  >
+<h1 class="col-12 text-center text-white" >Juan David Sanchez Mancilla</h1>	
 </header>
 
-<section>
-<h2>13/05/1997</h2>	
-	<article>
+<section class="col-12 row mt-4 " >
+
+
+
+	<div class="col-6">
+		<div class="card bg-dark text-white">
+		<div class="card-body">
+			<div class="card-title">
+				<h2>13/05/1997</h2>	
+			</div>
+			<div class="card-text"><article >
 		<p>
 			Naci en Arauca. Vivi y creci en diferentes partes de Colombia, recorriendo ciudades como Cartagena, Tumaco, Arauca y Cucuta, esta ultima terminando como mi locacion actual desde 2005. Llegue a participar en mi niñez en campeonatos de futbol. En mi adolecencia parte de los inicios de mi adultez llegue a participar en competiciones de League of Legends. 
 		</p>
@@ -23,9 +44,25 @@
 		</p>
 
 	</article>
+				
+			</div>
+			
+		</div>
+	</div>
+	</div>
 
-	<article>
-		     <h3>Mis hobbies</h3>           
+	<div class="col-6 row">
+		<div class="col-6">
+		<div class="card bg-dark text-white">
+	<div class="card-body">
+		<div class="card-title">
+			<h3>Mis hobbies</h3> 
+		</div>
+		<div class="card-text">
+			<article>
+		
+		       
+		          
 	            <ul>
 		             <li>Series o animes</li>
 		             <li>Programar</li>
@@ -33,8 +70,22 @@
 	            </ul>            
 
 	</article>
-<article>
+		</div>
+	</div> </div>
+	</div>
+<div class="col-6">
+	<div class="card  bg-dark text-white">
+		
+		<div class="card-body">
+			<div class="card-title">
+			 
 	<h3>Mis peliculas y series favoritas</h3>
+		</div>
+			<div class="card-text">
+				<article>
+	
+	
+	
 	<ul>	
 	<li>
 		Avatar
@@ -55,47 +106,72 @@
 		Shingeki no kyojin
 	</li>
 </ul>
-</article>
 
-<article>
+</article>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-12 mt-3">
+	<div class="card bg-dark text-white ">
+		
+<div class="card-body">
+	<div class="card-title">
+			<h3>Cancion favorita</h3>
+		</div>
+	<div class="card-text">
+		<article>
+
 	<p>Cancion que mas escucho actualmente ya que no tengo una favorita</p>
-	The Notorious B.I.G. - Big Poppa (Official Music Video)
-<div>
-	<audio controls>
+	The Notorious B.I.G. - Big Poppa (Official Music Video)<br /><br />
+
+	<audio controls class="col-12">
 	<source src="song.mp4" type="audio/mpeg">
 </audio>
-</div>
-</article>
 
+
+</article>
+		
+	</div>
+</div>
+	</div>
+
+</div>
+	</div>
+
+
+
+<div class="col-12 mt-3">
+	<div class="card bg-dark text-white">
+	<div class="card-body">
+		<div class="card-title">
+			<h3>Mis materias favoritas</h3>
+		</div>
+	<div class="card-text">
 <article>
-	<h3>Mis materias favoritas</h3>
-	<style type="text/css">
-	table{
-		border-collapse: collapse;
-	}
-		 th,td{
-			border: 1px solid black;
-			
-		}
-	</style>
-	<table >
-		<thead>
-			<tr  >
-				<th style="width: 30%;"> Materia</th>
-				<th style="width: 10%">Nota</th>
-				<th style="width: 60">Porque es de las favoritas</th>
+	
+	
+	
+	
+	<table class="table table-striped table-bordered table-dark " >
+		<thead class="text-center">
+			<tr ><b>
+				<th class="col-2 "> Materia</th>
+				<th  class="col-2 ">Nota</th>
+				<th  class="col">Porque es de las favoritas</th></b>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
+		<tbody class="text-center">
+			<tr >
 		    	<td>POO</td>
 		        <td>3.2</td>
 		        <td>Fue el abrebocas a la programacion y a pesar de la nota disfrute mucho el desarrollo de la materia ya que se vio con la Ing. Pilar Rojas y era bastante exigente con la forma de hacer codigo.</td>
 		    </tr>
-			<tr>
+			<tr >
 		<td>POO2</td>
 		<td>3.9</td>
-		<td>La materia que mas me ha gustado por todos los temas que se llegaron a ver y como Ing. Boris llevo el curso. La parte que mas me gusto fue el desarrollo de una aplicacion tipo juego que manejaba multijugador y chat local.</td>			
+		<td >La materia que mas me ha gustado por todos los temas que se llegaron a ver y como Ing. Boris llevo el curso. La parte que mas me gusto fue el desarrollo de una aplicacion tipo juego que manejaba multijugador y chat local.</td>			
 		</tr>		     
 			<tr>
 				<td>BD</td>
@@ -107,11 +183,32 @@
 	</table>
 </article>
 
+	 </div>
+	</div>
+	
+</div>
+</div>
+
+
 </section>
 
 
 
+<footer  class="mt-4 ">
+	<ul class="nav"><li  class="nav-item"><a  class="nav-link text-white" href="contacto.html">Contacto</a>
+</li></ul>
+	</footer>
 
 
+
+
+		
+	</div>
+	
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 </html>
