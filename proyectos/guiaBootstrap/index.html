@@ -23,7 +23,7 @@ src="http://www.balonazos.com/wp-content/uploads/2015/11/RUSIA2018.png" />
 <ul class="nav navbar-nav ">
 <li class="active"><a href="#">Inicio</a></li>
 <li><a href="#">Sede</a></li>
-<li><a href="#">Partidos</a></li>
+<li><a href="partido.html">Partidos</a></li>
 <li><a href="#">Grupos A</a></li>
 <li><a href="#">Grupos B</a></li>
 <li><a href="#">Grupos C</a></li>
@@ -41,7 +41,7 @@ src="http://www.balonazos.com/wp-content/uploads/2015/11/RUSIA2018.png" />
 		
 	</ul>
 </li>
-<li><a href="#">Contacto</a></li>
+<li><a href="formulario.html">Contacto</a></li>
 </ul>
 </div>
 </div>
@@ -170,11 +170,13 @@ $("#contenedor").load("selecciones/colombia.html");
 
 	})
 
-	$("li a").click(function (event){
+	$("ul[class=dropdown-menu] li a ").click(function (event){
 			event.preventDefault();
 			if ($(this).data("seleccion")!=null) {
 				console.log("h")
 				$("#contenedor").load("selecciones/"+$(this).data("seleccion")+".html");
+			}else{
+
 			}
 		})
 
