@@ -35,9 +35,9 @@
 <script type="text/javascript">
 	
 	var part="";
-	$.getJSON("partidos.json",(datos)=>{
+	$.getJSON("https://juanda1434.github.io/Desarrollo-web/proyectos/guiaBootstrap/partidos.json",(datos)=>{
 		$("#contenido").html("");
-		$.eatch(datos["partidos"],(idx,partido)=>{
+		$.each(datos["partidos"],(idx,partido)=>{
 			$("#contenido").append("<tr>"+"<td>"+partido["fecha"]+"</td><td>"+partido["equipo1"]+"</td><td>"+partido.equipo2+"</td>"+"</tr>");
 
 		});	});
